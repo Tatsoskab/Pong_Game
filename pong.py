@@ -37,12 +37,10 @@ while run:
 
     if Ball.colliderect(Player1):
         ball_x_vel = -ball_x_vel
-        # Adjust ball position to avoid getting stuck
         if x_ball < pos1_x + width:
             x_ball = pos1_x + width
     if Ball.colliderect(Player2):
         ball_x_vel = -ball_x_vel
-        # Adjust ball position to avoid getting stuck
         if x_ball > pos2_x + width:
             x_ball = pos2_x + width
     # Key movement
